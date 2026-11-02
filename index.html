@@ -41,6 +41,7 @@
 <meta name="color-scheme" content="light only">
 <meta name="color-scheme" content="light only">
 <meta name="color-scheme" content="light only">
+<meta name="color-scheme" content="light only">
 <title>에비에르 식탁매트 체험</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Nanum+Myeongjo:wght@400&family=Cormorant:wght@500&display=swap">
 <style>
@@ -447,7 +448,7 @@ function warp(c,src,map,N){const w=src.width,h=src.height;
     [[0,1,2],[0,2,3]].forEach(t=>{const ss=t.map(k=>s[k]),dd=t.map(k=>d[k]);
       const cx=(dd[0][0]+dd[1][0]+dd[2][0])/3,cy=(dd[0][1]+dd[1][1]+dd[2][1])/3;
       c.save();c.setTransform(1,0,0,1,0,0);c.beginPath();
-      dd.forEach((p,k)=>{const dx=p[0]-cx,dy=p[1]-cy,l=Math.hypot(dx,dy)||1,q=[p[0]+dx/l*.7,p[1]+dy/l*.7];k?c.lineTo(q[0],q[1]):c.moveTo(q[0],q[1]);});
+      dd.forEach((p,k)=>{const dx=p[0]-cx,dy=p[1]-cy,l=Math.hypot(dx,dy)||1,q=[p[0]+dx/l*2.2,p[1]+dy/l*2.2];k?c.lineTo(q[0],q[1]):c.moveTo(q[0],q[1]);});
       c.closePath();c.clip();c.setTransform(...affine(ss,dd));c.drawImage(src,0,0);c.restore();});}}
 
 /* ---- mat texture ---- */
